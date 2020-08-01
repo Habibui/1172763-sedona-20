@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Седона</title>
+  <link rel="preload" href="/fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="/fonts/ptsansbold.woff2" as="font">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="sprite">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+  <div class="page-wrapper">
+    <div class="shadow-wrapper">
+      <header class="page-header">
+        <nav class="main-nav main-nav--opened main-nav--nojs">
+          <button class="page-header__menu-close" type="button" aria-label="Закрыть меню">
+            <svg class="page-header__button-cross" version="1.1" xmlns="http://www.w3.org/2000/svg" width="22.199"
+              height="22.199">
+              <use xlink:href="#icon-cross"></use>
+            </svg>
+          </button>
+
+          <ul class="main-nav__list list-style-reset">
+            <li class="main-nav__item"><a href="index.html">Главная</a></li>
+            <li class="main-nav__item main-nav__item--current"><a>Фото и видео</a></li>
+            <li class="main-nav__item"><a href="form.html">Форма отзыва</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+          </ul>
+        </nav>
+
+        <div class="page-header__top">
+          <a class="page-header__logo" href="index.html" aria-label="Лого Седоны"></a>
+          <button class="page-header__menu-open" type="button" aria-label="Открыть меню">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22.928" height="21.982" version="1.1">
+              <use xlink:href="#icon-menu"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="page-header__intro page-header__intro--photo">
+          <img class="page-header__title page-header__title--photo" src="img/sedona.svg" width="229" height="39"
+            alt="City of Sedona">
+        </div>
+      </header>
+
+      <main>
+        <div class="content-wrapper">
+          <section class="intro intro--photo">
+            <div class="intro__content intro__content--photo">
+              <h1 class="intro__title intro__title--photo">Фото и видео</h1>
+              <p class="intro__description intro__description--photo"> Не можете решиться на путешествие из-за курса?
+                Фотографии помогут вам забыть о политике и экономике.</p>
+            </div>
+          </section>
+
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <section class="gallery">
+
+              <div class="gallery__item gallery__item--first">
+                <a class="gallery__link" href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x,
+                            img/photo-sunset-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x,
+                            img/photo-sunset-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 320px)" srcset="img/photo-sunset-mobile@1x.webp 1x,
+                            img/photo-sunset-mobile@2x.webp 2x">
+
+                    <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x,
+                            img/photo-sunset-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x,
+                            img/photo-sunset-tablet@2x.jpg 2x">
+                    <source media="(min-width: 320px)" srcset="img/photo-sunset-mobile@1x.jpg 1x,
+                            img/photo-sunset-mobile@2x.jpg 2x">
+                    <img class="gallery__image" src="img/photo-sunset-desktop@1x.jpg" alt="Дорога в закат">
+                  </picture>
+                </a>
+                <div class="gallery__footer">
+                  <div class=" gallery__sign-block">
+                    <h2 class="gallery__title ">Неродные просторы</h2>
+                    <p class="gallery__text">Автор фото: Борис</p>
+                  </div>
+
+                  <div class="gallery__likes">
+                    <button class="gallery__like-button" type="submit" aria-label="Поставить лайк">
+                    </button>
+                    <span class="gallery__count">1350</span>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.webp 1x,
+                          img/photo-cactus-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.webp 1x,
+                          img/photo-cactus-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 320px)" srcset="img/photo-cactus-mobile@1x.webp 1x,
+                          img/photo-cactus-mobile@2x.webp 2x">
+
+                    <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x,
+                            img/photo-cactus-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x,
+                            img/photo-cactus-tablet@2x.jpg 2x">
+                    <source media="(min-width: 320px)" srcset="img/photo-cactus-mobile@1x.jpg 1x,
+                            img/photo-cactus-mobile@2x.jpg 2x">
+                    <img class="gallery__image" src="img/photo-cactus-desktop@1x.jpg" alt="Кактус">
+                  </picture>
+                </a>
+                <div class="gallery__footer">
+                  <div class=" gallery__sign-block">
+                    <h2 class="gallery__title ">Местная растительность</h2>
+                    <p class="gallery__text">Автор фото: Сергей</p>
+                  </div>
+
+                  <div class="gallery__likes">
+                    <button class="gallery__like-button" type="submit" aria-label="Поставить лайк">
+                    </button>
+                    <span class="gallery__count">143</span>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.webp 1x,
+                          img/photo-roads-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.webp 1x,
+                          img/photo-roads-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 320px)" srcset="img/photo-roads-mobile@1x.webp 1x,
+                          img/photo-roads-mobile@2x.webp 2x">
+
+                    <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x,
+                            img/photo-roads-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x,
+                            img/photo-roads-tablet@2x.jpg 2x">
+                    <source media="(min-width: 320px)" srcset="img/photo-roads-mobile@1x.jpg 1x,
+                            img/photo-roads-mobile@2x.jpg 2x">
+                    <img class="gallery__image" src="img/photo-roads-desktop@1x.jpg" alt="Дорога в лесу">
+                  </picture>
+                </a>
+                <div class="gallery__footer">
+                  <div class=" gallery__sign-block">
+                    <h2 class="gallery__title ">Дорога на север</h2>
+                    <p class="gallery__text">Автор фото: Петр</p>
+
+                  </div>
+                  <div class="gallery__likes">
+                    <button class="gallery__like-button" type="submit" aria-label="Поставить лайк">
+                    </button>
+                    <span class="gallery__count">96</span>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.webp 1x,
+                          img/photo-bridge-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.webp 1x,
+                          img/photo-bridge-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 320px)" srcset="img/photo-bridge-mobile@1x.webp 1x,
+                          img/photo-bridge-mobile@2x.webp 2x">
+
+                    <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x,
+                            img/photo-bridge-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x,
+                            img/photo-bridge-tablet@2x.jpg 2x">
+                    <source media="(min-width: 320px)" srcset="img/photo-bridge-mobile@1x.jpg 1x,
+                            img/photo-bridge-mobile@2x.jpg 2x">
+                    <img class="gallery__image" src="img/photo-bridge-desktop@1x.jpg" alt="Дорога в лесу">
+                  </picture>
+                </a>
+                <div class="gallery__footer">
+                  <div class=" gallery__sign-block">
+                    <h2 class="gallery__title ">Мост дьявола</h2>
+                    <p class="gallery__text">Автор фото: Антон</p>
+                  </div>
+
+                  <div class="gallery__likes">
+                    <button class="gallery__like-button" type="submit" aria-label="Поставить лайк">
+                    </button>
+                    <span class="gallery__count">254</span>
+                  </div>
+                </div>
+              </div>
+
+            </section>
+          </form>
+
+          <section class="gallery-video">
+
+            <div class="gallery-video__top">
+              <div class="gallery-video__description">
+                <h2 class="gallery-video__title">Все еще сомневаетесь?</h2>
+                <p class="gallery-video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+                  очередной раз!</p>
+              </div>
+            </div>
+
+            <div class="gallery-video__player">
+              <div class="gallery-video__image">
+              </div>
+              <div class="gallery-video__controls">
+                <div class="gallery-video__bar">
+                </div>
+                <div class="gallery-video__control-buttons">
+                  <button class="gallery-video__button gallery-video__button--repeat" aria-label="Проиграть сначала">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="20">
+                      <use xlink:href="#icon-video-replay"></use>
+                    </svg>
+                  </button>
+                  <button class="gallery-video__button gallery-video__button--subtitle" aria-label="Включить субтитры">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="20">
+                      <use xlink:href="#icon-video-subtitles"></use>
+                    </svg>
+                  </button>
+                  <button class="gallery-video__button gallery-video__button--full-screen"
+                    aria-label="Развернуть на весь экран">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                      <use xlink:href="#icon-video-fullscreen"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </div>
+      </main>
+
+
+      <footer class="page-footer page-footer--index">
+
+        <a class="page-footer__hashtag">#visitsedona</a>
+
+        <div class="social">
+          <ul class="social__list list-style-reset">
+            <li>
+              <a class="social__item social__item--twitter" href="#" title="Twitter" aria-label="Страничка в Твиттере">
+                <span class="visually-hidden">Мы в Твиттер</span>
+                <svg class="social__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" width="17.5" height="14.663">
+                  <use xlink:href="#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social__item social__item--facebook" href="#" title="Facebook" aria-label="Страничка в ФБ">
+                <span class="visually-hidden">Мы в Фейсбуке</span>
+                <svg class="social__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" width="8.672"
+                  height="18.944">
+                  <use xlink:href="#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social__item social__item--youtube" href="#" title="Youtube" aria-label="Канал на Ютубе">
+                <span class="visually-hidden">Мы в Ютуб</span>
+                <svg class="social__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" width="19.979"
+                  height="14.015">
+                  <use xlink:href="#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" title="htmlacademy">
+          <p class="page-footer__copyright-text">Разработано</p>
+          <div class="page-footer__copyright-logo">
+            <svg class="page-footer__logo" xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09">
+              <use xlink:href="#icon-htmlacademy"></use>
+            </svg>
+          </div>
+        </a>
+
+      </footer>
+    </div>
+  </div>
+  <script src="js/menu.js"></script>
+</body>
+
+</html>
