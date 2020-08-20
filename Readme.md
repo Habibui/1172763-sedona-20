@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Егор](https://up.htmlacademy.ru/adaptive/18/user/1123415).
-* Наставник: [Кирилл Генералов](https://htmlacademy.ru/profile/hifull).
+* Студент: [Габиб Намазов](https://htmlacademy.ru/profile/id1172763).
+* Наставник: [Кексобот](https://up.htmlacademy.ru/adaptive/20).
 
 ---
 

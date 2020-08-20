@@ -89,14 +89,6 @@
   @include flex-column-center;
 }
 
-.map {
-  width: 100%;
-  height: 250px;
-
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .gallery-video__player {
   display: flex;
   flex-direction: column;
