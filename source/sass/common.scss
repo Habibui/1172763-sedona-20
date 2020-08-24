@@ -24,14 +24,6 @@ body {
   @include container;
 }
 
-.map {
-  width: 100%;
-  height: 250px;
-
-  margin-left: auto;
-  margin-right: auto;
-}
-
 @media (min-width: $desktop-width) {
   .shadow-wrapper {
     box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);

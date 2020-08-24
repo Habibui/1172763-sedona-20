@@ -1,12 +1,6 @@
-.person,
-.contacts,
-.evaluation,
-.places,
-.emotions {
-  border: none;
-}
-
 .review-form {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 38px;
   margin-top: 2px;
 }
@@ -15,7 +9,7 @@
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.button-send {
+.review-form__button-send {
   width: 280px;
   height: 58px;
 
@@ -45,7 +39,7 @@
   }
 }
 
-.remark {
+.review-form__remark {
   display: none;
 }
 
@@ -62,7 +56,7 @@
     border-top: none;
   }
 
-  .button-send {
+  .review-form__button-send {
     width: 324px;
 
     letter-spacing: 0.5px;
@@ -70,7 +64,7 @@
     padding-left: 0;
   }
 
-  .remark {
+  .review-form__remark {
     display: inline-block;
 
     font-size: 14px;
@@ -81,7 +75,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .button-send {
+  .review-form__button-send {
     width: 480px;
 
     letter-spacing: 0.5px;
@@ -89,7 +83,7 @@
     padding-left: 0;
   }
 
-  .remark {
+  .review-form__remark {
     margin-right: 120px;
   }
 
