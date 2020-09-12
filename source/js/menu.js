@@ -2,6 +2,7 @@ var navMain = document.querySelector('.main-nav');
 var navOpen = document.querySelector('.page-header__menu-open');
 var navClose = document.querySelector('.page-header__menu-close');
 
+navClose.classList.remove('visually-hidden');
 navMain.classList.remove('main-nav--nojs');
 navMain.classList.remove('main-nav--opened');
 navMain.classList.add('main-nav--closed');
